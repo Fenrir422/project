@@ -766,8 +766,10 @@
                 interval: false
             });
 
-            $('.close-button-helper').click(function(e) {
-                $('#modalForImages').css('display', 'none');
+            $('.close-button-helper, #modalForImages').click(function(e) {
+                if(e.target.id == "modalForImages" || e.target.getAttribute('aria-label') == 'Close') {
+                  $('#modalForImages').css('display', 'none');
+                }
             });
 
         });
