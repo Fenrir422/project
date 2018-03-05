@@ -1,0 +1,21 @@
+@media (min-width: 768px){
+    .card-hider{
+    	display: none;
+   	}
+
+	.tab-pane .collapse {
+		display: none;
+	}
+	.tab-pane.show .collapse {
+		display: block;
+	}
+}
+
+@media (max-width: 768px){
+    .tab-menu {
+    	display: none;
+   	}
+	.tab-content>.tab-pane {
+		display: block;
+	}
+}
